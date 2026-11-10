@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Smoke Test</title>
+    <!-- mammoth UMD (copied to dist/ root by the main build) must load before the
+         IIFE smoke bundle, which reads window.mammoth. -->
+    <script src="./mammoth.browser.min.js"></script>
+  </head>
+  <body>
+    <pre
+      id="out"
+      style="font: 14px monospace; white-space: pre-wrap; padding: 12px"
+      >RUNNING…</pre
+    >
+    <script src="./smoke-bundle.js"></script>
+  </body>
+</html>
